@@ -1,0 +1,86 @@
+.btn {
+  border: none;
+  outline: none;
+  // background-image: linear-gradient(
+  //   to right,
+  //   hsl(236, 57%, 28%),
+  //   hsl(39, 100%, 52%)
+  // );
+  background-image: linear-gradient(
+    90deg,
+    hsl(335, 87%, 51%),
+    hsl(29, 99%, 67%)
+  );
+  background-size: 200%;
+  color: hsl(0, 0%, 100%);
+  padding: 12px 35px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 0 25px;
+  transition: 0.35s ease;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+
+  &:active {
+    transform: translateY(4px);
+  }
+}
+
+.btn-navbar {
+  border: none;
+  outline: none;
+  background-image: linear-gradient(
+    90deg,
+    hsl(335, 87%, 51%),
+    hsl(29, 99%, 67%)
+  );
+  background-size: 200%;
+  color: hsl(0, 0%, 100%);
+  padding: 12px 35px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 0 25px;
+  transition: 0.35s ease;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  display: block;
+  // position: absolute;
+  margin-left: 2.5rem;
+
+  &:active {
+    transform: translateY(4px);
+  }
+
+  // @media only screen and (max-width: 980px) {
+  //   background-image: linear-gradient(hsl(39, 100%, 52%), hsl(39, 100%, 52%));
+  // }
+}
+
+.nav-extra {
+  text-decoration: none;
+}
+
+.btn-card {
+  border: none;
+  outline: none;
+  // background-image: linear-gradient(
+  //   to right,
+  //   hsl(236, 57%, 28%),
+  //   hsl(39, 100%, 52%)
+  // );
+  background-image: linear-gradient(
+    90deg,
+    hsl(335, 87%, 51%),
+    hsl(29, 99%, 67%)
+  );
+  background-size: 200%;
+  color: hsl(0, 0%, 100%);
+  padding: 12px 35px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 0 25px;
+  transition: 0.35s ease;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}

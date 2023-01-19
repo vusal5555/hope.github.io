@@ -1,0 +1,294 @@
+.blogs {
+  // padding: 6rem 0;
+  padding: 15rem 0;
+  padding-bottom: 6rem;
+  &--container {
+    width: 61.3%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &--big-title {
+    text-align: center;
+    font-size: 4.5rem;
+    color: hsl(236, 57%, 28%);
+    margin-bottom: 4.5rem;
+    font-weight: 900;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 12.6%;
+      background-image: linear-gradient(
+        90deg,
+        hsl(335, 87%, 51%),
+        hsl(29, 99%, 67%)
+      );
+      height: 6px;
+
+      margin: 0 auto;
+      margin-top: 1.1rem;
+      border-radius: 1rem;
+    }
+  }
+
+  &--banner {
+    border-radius: 1rem;
+    overflow: hidden;
+    // margin-block-end: 0;
+
+    // object-fit: cover;
+  }
+
+  &--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    // object-fit: cover;
+
+    transition: all 0.3s;
+    display: block;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  &--blog {
+    display: grid;
+    grid-template-columns: 0.83fr 1fr;
+    gap: 2rem;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3rem;
+
+    border-radius: 1rem;
+  }
+
+  &--title {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: hsl(236, 57%, 28%);
+  }
+  &--text {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: hsl(236, 57%, 28%);
+  }
+
+  &--social-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-bottom: 0.75rem;
+  }
+
+  &--date {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-stat {
+      font-size: 1.7rem;
+      color: hsl(236, 57%, 28%);
+      font-weight: 500;
+    }
+  }
+
+  &--comment {
+    display: flex;
+    align-items: center;
+    margin-right: 1.3rem;
+    gap: 0.5rem;
+
+    &-stat {
+      font-size: 1.7rem;
+      color: hsl(236, 57%, 28%);
+    }
+  }
+}
+.fa-clock {
+  font-size: 1.9rem;
+  color: hsl(335, 87%, 51%);
+}
+
+.fa-comment {
+  font-size: 1.9rem;
+  color: hsl(335, 87%, 51%);
+}
+
+.fa-share-nodes {
+  font-size: 1.9rem;
+  color: hsl(335, 87%, 51%);
+}
+
+@media only screen and (max-width: 1700px) {
+  .blogs {
+    &--container {
+      width: 90%;
+      padding-inline: 1.5rem;
+      gap: 3rem;
+    }
+
+    &--big-title {
+      font-size: 4.58rem;
+
+      &::after {
+        width: 17.5%;
+      }
+    }
+    &--blog {
+      grid-template-columns: 0.76fr 1fr;
+    }
+
+    &--title {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .blogs {
+    padding-bottom: 6rem;
+    &--container {
+      grid-template-columns: 1fr;
+      width: 90%;
+      padding-inline: 1.5rem;
+      gap: 3rem;
+    }
+
+    &--blog {
+      grid-template-columns: 1fr 1fr;
+      padding: 2rem;
+    }
+
+    &--big-title {
+      font-size: 3.5rem;
+      margin-bottom: 4.5rem;
+      font-weight: 900;
+      color: hsl(236, 57%, 28%);
+
+      &::after {
+        content: "";
+        display: block;
+        width: 20%;
+        background-image: linear-gradient(
+          hsl(335, 87%, 51%),
+          hsl(39, 100%, 52%)
+        );
+        height: 7px;
+        border-radius: 1rem;
+
+        margin: 0 auto;
+        margin-top: 2.5rem;
+      }
+    }
+
+    &--title {
+      font-size: 2rem;
+    }
+
+    &--text {
+      font-size: 1.8rem;
+    }
+
+    &--comment {
+      &-stat {
+        font-size: 1.6rem;
+      }
+    }
+
+    &--date {
+      &-stat {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .fa-clock {
+    font-size: 2rem;
+  }
+  .fa-comment {
+    font-size: 2rem;
+  }
+
+  .fa-share-nodes {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .blogs {
+    // padding-top: 6rem;
+    &--container {
+      grid-template-columns: 1fr;
+      width: 95%;
+      gap: 3rem;
+    }
+
+    &--big-title {
+      font-size: 3.5rem;
+      margin-bottom: 4.5rem;
+      font-weight: 900;
+      color: hsl(236, 57%, 28%);
+
+      &::after {
+        content: "";
+        display: block;
+        width: 45%;
+        background-image: linear-gradient(
+          hsl(335, 87%, 51%),
+          hsl(39, 100%, 52%)
+        );
+        height: 7px;
+        border-radius: 1rem;
+
+        margin: 0 auto;
+        margin-top: 2.5rem;
+      }
+    }
+
+    &--blog {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+    }
+
+    &--title {
+      font-size: 2rem;
+    }
+
+    &--text {
+      font-size: 1.8rem;
+    }
+
+    &--comment {
+      &-stat {
+        font-size: 1.6rem;
+      }
+    }
+
+    &--date {
+      &-stat {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .fa-clock {
+    font-size: 2rem;
+  }
+  .fa-comment {
+    font-size: 2rem;
+  }
+
+  .fa-share-nodes {
+    font-size: 2rem;
+  }
+}
