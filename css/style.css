@@ -49,7 +49,7 @@
   .header--hero-container {
     width: 61.3%;
     margin: 12.5rem auto;
-    margin-top: 20rem;
+    margin-top: 22rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
