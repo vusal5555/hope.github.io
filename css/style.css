@@ -157,13 +157,15 @@
 
 @media only screen and (max-width: 1500px) {
   .header--navbar {
-    padding: 1.5rem 10rem; } }
+    padding: 1.5rem 10rem; }
+    .header--navbar--brand {
+      font-size: 3.8rem; } }
 
 @media only screen and (max-width: 1400px) {
   .header--navbar {
     padding: 1.5rem 9.07rem; }
-  .header--brand {
-    font-size: 3.8rem; } }
+    .header--navbar--brand {
+      font-size: 3.8rem; } }
 
 @media only screen and (max-width: 1300px) {
   .header {
